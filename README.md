@@ -14,6 +14,17 @@ other entities that have display settings.)
 
 When you tell one of your content type's view modes (Default,  Teaser, etc) to use 
 the BYU Card or BYU Feature Card layouts, you'll see the appropriate regions. 
+
+## How to Use
+
+1. Installation will create two view modes.
+2. Go to the content type you wish to display through a BYU Card format, and go to Manage Display. At the bottom, enable the BYU Card and/or BYU Feature Card modes.
+3. Edit that display mode, select the Layout 'BYU Card' or 'BYU Feature Card' at the bottom of the screen and save. 
+4. Drag your fields appropriately into the corresponding regions. Hide all labels.
+
+Note: We recommend you use the module manage display to allow displaying the title and other native node features inside a region in the display mode.
+     https://www.drupal.org/project/manage_display
+
 ### Slots in the Components
 BYU Feature Card contains several regions. See it's readme for more information:
 https://github.com/byuweb/byu-feature-card-component
@@ -27,14 +38,15 @@ BYU Card: https://github.com/byuweb/byu-card
 BYU Feature Card: https://github.com/byuweb/byu-feature-card-component 
 
 1. Create a field for your content type. Select text (plain) and call it 
-"Classes". 
+"Classes" or "Card Classes". 
 2. Go to your Manage Display tab for the content type. Drag that field to 
 the Classes region. Click Save, and clear caches if needed.
 3. Edit a node that you are working on and enter a valid class in the Classes field. 
 View that node in the display mode you are working with. (i.e. Default or teaser). 
 You should see your class applying to byu-card or byu-feature-card.
 
-Repeat this process for the Attributes field and region.
+Repeat this process for the Attributes field and region. 
+
 ## Run into a Problem?
 If you are using a unique field type and it doesn't go into the component correctly,
 let the web community know by posting an issue in github:
