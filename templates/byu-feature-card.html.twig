@@ -15,32 +15,24 @@
             <div slot="title">{{ field[i] }}</div>
         {% endfor %}
     {% endfor %}
-    {% if field in content.feature_top is defined %}
-        <div slot="feature-top">
-            {% for field in content.feature_top %}
-                {{ field }}
-            {% endfor %}
-        </div>
-    {% endif %}
-    {% if field in content.feature_left is defined %}
-        <div slot="feature-left">
-            {% for field in content.feature_left %}
-                {{ field }}
-            {% endfor %}
-        </div>
-    {% endif %}
-    {% if field in content.feature_right is defined %}
-        <div slot="feature-right">
-            {% for field in content.feature_right %}
-                {{ field }}
-            {% endfor %}
-        </div>
-    {% endif %}
-    {% if field in content.feature_center is defined %}
-        <div slot="feature-center">
-            {% for field in content.feature_center %}
-                {{ field }}
-            {% endfor %}
-        </div>
-    {% endif %}
+    <div slot="feature-top">
+        {% for field in content.feature_top %}
+            {{ field }}
+        {% endfor %}
+    </div>
+    <div slot="feature-left">
+        {% for field in content.feature_left %}
+            {{ field }}
+        {% endfor %}
+    </div>
+    <div slot="feature-right">
+        {% for field in content.feature_right %}
+            {{ field }}
+        {% endfor %}
+    </div>
+    <div slot="feature-center">
+        {% for field in content.feature_center %}
+            {{ field }}
+        {% endfor %}
+    </div>
 </byu-feature-card>
